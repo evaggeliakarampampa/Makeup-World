@@ -3,88 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="products.css">
-    <title>Multicolor Eyeshadow Palette</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Makeup World</title>
+    <link rel="icon" href="beauty-shop-logo_-beauty-and-fashion-logo-design-template-a33768774afa152588db87fed1c89c3a_screen-removebg-preview.png" type="image/x-icon">
+    </head>
+    <body>
+    
+        
+        <div id="top-header">
+            <div id="logo">
+               <img src="beauty-shop-logo_-beauty-and-fashion-logo-design-template-a33768774afa152588db87fed1c89c3a_screen-removebg-preview.png" alt="logo">
+            </div>
+            
+            <div class="hello">
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="  Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <div class="button-row">
+              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="bye">Login</button>
+              <button class="signup" onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+              </div>
+             </div>
+             
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="/action_page.php" method="post">
+               
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                <button class="submit">Login</button>
+                </div>
+            
+                
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">Password?</a></span>
+                </div>
+              </form>
+            </div>
 
-<body>
-    <div id="top-header">
-    <div id="logo">
-      <img src="beauty-shop-logo_-beauty-and-fashion-logo-design-template-a33768774afa152588db87fed1c89c3a_screen-removebg-preview.png" alt="logo">
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/signup_action.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="eye.html">Eyes</a>
-          <ul>
-            <li><a href="#">Eyeshadow</a></li>
-            <li><a href="#">Eyeliner</a></li>
-            <li><a href="#">Mascara</a></li>
-            <li><a href="#">Brow</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="lips.html">Lips</a>
-          <ul>
-            <li><a href="#">Lipliner</a></li>
-            <li><a href="#">Matte Lipstick</a></li>
-            <li><a href="#">Liquid Lipstick</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="skincare.html">Skincare</a>
-          <ul>
-            <li><a href="#">Creams</a></li>
-            <li><a href="#">Beauty Gadgets</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="face.html">Face</a>
-          <ul>
-            <li><a href="#">Blush</a></li>
-            <li><a href="#">Bronzer</a></li>
-            <li><a href="#">Highlighter</a></li>
-            <li><a href="#">Foundation</a></li>
-            <li><a href="#">Concealer</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
+
+    <div class="container">
+      <label for="newuname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="newuname" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="     Enter Email" name="email" required>
+
+      <label for="newpsw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="newpsw" required>
+
+      <label for="confpsw"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="confpsw" required>
+
+      <button type="submit">Sign Up</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+
+           <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="eye.html">Eyes</a>
+                    <ul>
+                        <li><a href="#">Eyeshadow</a></li>
+                        <li><a href="#">Eyeliner</a></li>
+                        <li><a href="#">Eascara</a></li>
+                        <li><a href="#">Brow</a></li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="lips.html">Lips</a>
+                  <ul>
+                      <li><a href="#">Lipliner</a></li>
+                      <li><a href="#">Matte Lipstick</a></li>
+                      <li><a href="#">Liquid Lipstick</a></li>
+                  </ul>
+              </li>
+              <li>
+                <a href="skincare.html">Skincare</a>
+                <ul>
+                    <li><a href="#">Creams</a></li>
+                    <li><a href="#">Beauty Gadgets</a></li>
+                   
+                </ul>
+            </li>
+            <li>
+              <a href="face.html">Face</a>
+              <ul>
+                  <li><a href="#">Blush</a></li>
+                  <li><a href="#">Bronzen</a></li>
+                  <li><a href="#">Highlighter</a></li>
+                  <li><a href="#">Foundation</a></li>
+                  <li><a href="#">Concealer</a></li>
+              </ul>
+          </li>
+            </ul>
+        </nav>   
+      
+            </div>
         <div class="products">
             <div class="image">
            <img src="eyeshodwo/eye_10.jpg" alt="">
            </div>
            <div class="info">
             <div  class="datail">
-             <h3>multicolor eyeshadow palette</h3>
+             <h3>Multicolor Eyeshadow Palette</h3>
            </div>
            <div class="price">
                <p>20&euro;</p>
            </div>
           
            <div class="add-to-cart">
-             <button>add to cart</button>
+             <button>Add to Cart</button>
            </div>
            </div>
         </div>
-        <header>
-            <!-- Content -->
-          </header>
-          
-          <main>
-            <!-- Content -->
-          </main>
-          
+
           <footer class="footer">
             <div class="footer__addr">
               <h1 class="footer__logo">Something</h1>
                   
-              <a href="aboutus.html">click to learn more about us!</a>
+              <a href="aboutus.html">Click to learn more About Us!</a>
               
               <address>
-                5534 Somewhere In. The World 22193-10212<br>
+                5534 Somewhere In The World 22193-10212<br>
                     
                 <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
               </address>
@@ -158,7 +224,7 @@
               </li>
             </ul>
             <div class="contact">
-                <a href="contact.html">if there is any problem contact us!!</a>
+                <a href="contact.html">If there is any problem Contact Us!!</a>
             </div>
            
             <div class="legal">
