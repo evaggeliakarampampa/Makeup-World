@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #top-header #logo img
+{
+    width: 125px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+   
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(160, 101, 78);
+ text-align: center;
+ 
+
+}
+
+.navbar li {
+  display: inline-block;
+  
+}
+
+.navbar li a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+.navbar ul ul li {
+  display: block;
+}
+
+.navbar li:hover ul {
+  display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+  background-color: #555;
+} 
+.beauty
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 20px
+}
+.face
+{
+    columns: 1fr;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial; 
+}
+.face img
+{
+    width: 195px;
+}
+.face .title
+{
+  text-align: center;
+}
+.face .price
+{
+  font-size: 20px;
+  color: grey;
+}
+ button
+{
+  background-color: rgb(141, 73, 42);
+  color: white;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  
+ 
+}
+button:hover
+{
+  background-color:rgb(169, 130, 112)
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color:rgb(248, 236, 229);
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+
+
+a
+{
+    color: #100f0f;
+    font-size: medium;
+}
+a:hover
+{
+    color: #999;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+.social .fa
+{
+    padding: 3px;
+  font-size: 30px;
+  width: 50px;
+  text-align:right;
+  text-decoration: none;
+  margin: 10px 2px;
+  float: right;
+  color:#c67f50;
+  
+}
+</style>
+<body>
+    <div id="top-header">
+        <div id="logo">
+      <img src="beauty-shop-logo_-beauty-and-fashion-logo-design-template-a33768774afa152588db87fed1c89c3a_screen-removebg-preview.png" alt="logo">
+    </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="eye.html">Eyes</a>
+                    <ul>
+                        <li><a href="#">Eyeshadow</a></li>
+                        <li><a href="#">Eyeliner</a></li>
+                        <li><a href="#">Eascara</a></li>
+                        <li><a href="#">Brow</a></li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="lips.html">Lips</a>
+                  <ul>
+                      <li><a href="#">lipliner</a></li>
+                      <li><a href="#">Matte Lipstick</a></li>
+                      <li><a href="#">Liquid Lipstick</a></li>
+                  </ul>
+              </li>
+              <li>
+                <a href="skincare.html">Skincare</a>
+                <ul>
+                    <li><a href="#">Creams</a></li>
+                    <li><a href="#">Beauty Gadgets</a></li>
+                   
+                </ul>
+            </li>
+            <li>
+              <a href="face.html">Face</a>
+              <ul>
+                  <li><a href="#">Blush</a></li>
+                  <li><a href="#">Bronzen</a></li>
+                  <li><a href="#">Highlighter</a></li>
+                  <li><a href="#">Foundation</a></li>
+                  <li><a href="#">Concealer</a></li>
+              </ul>
+          </li>
+            </ul>
+        </nav> 
+        <div class="beauty">
+           <div class="face">
+              <a href="foundasion_3.html"><img src="fudiosion/foundation_3.jpg" alt=""></a>
+              <div class="title">
+                 <h2>light foundation shade</h2>
+              </div>
+              <div class="price">
+                <p>20&euro;</p>
+              </div>
+              <div class="add-to-cart">
+                <button>add to cart</button>
+              </div>
+           </div>
+           <div class="face">
+           <a href="highlighter_1.html"> <img src="bronzen-blush-highlighter/highlighter_1.jpg" alt=""></a>
+            <div class="title">
+                 <h2>pink highlighter</h2>
+            </div>
+            <div class="price">
+               <p>16&euro;</p>
+            </div>
+            <div class="add-to-cart">
+               <button>add to cart</button>
+            </div>
+             </div>
+             <div class="face">
+               <a href="bronzen_3.html"> <img src="bronzen-blush-highlighter/bronzen_3.jpg" alt=""></a>
+                 <div class="title">
+                    <h2>liquid bronzer</h2>
+                 </div>
+                  <div class="price">
+                     <p>18&euro;</p>
+                  </div>
+                  <div class="add-to-cart">
+                     <button>add to cart</button>
+                  </div>
+             </div>
+             <div class="face">
+               <a href="blush_2.html"> <img src="bronzen-blush-highlighter/blush_2.jpg" alt=""></a>
+                <div class="title">
+                    <h2>blush powder</h2>
+                </div>
+                <div class="price">
+                   <p>16&euro;</p>
+                </div>
+                <div class="add-to-cart">
+                   <button>add to cart</button>
+                </div>
+             </div>
+             <div class="face">
+               <a href="concealer_1.html"> <img src="consiler/concealer_1.jpg" alt=""></a>
+                <div class="title">
+                  <h2>light colored concealer</h2>
+                </div>
+                <div class="price">
+                 <p>15&euro;</p>
+                </div>
+                <div class="add-to-cart">
+                  <button>add to cart</button>
+                </div>
+             </div>
+             <div class="face">
+            <a href="bronzen_1.html"> <img src="bronzen-blush-highlighter/bronzen_1.jpg" alt=""></a>
+             <div class="title">
+                 <h2>powder bronzen</h2>
+             </div>
+             <div class="price">
+                <p>17&euro;</p>
+             </div>
+             <div class="add-to-cart">
+                <button>add to cart</button>
+             </div>
+             </div>
+             <div class="face">
+              <a href="concealer_8.html"> <img src="consiler/concealer_8.jpg" alt=""></a>
+                <div class="title">
+                   <h2>dark colored concealer</h2>
+                </div>
+                <div class="price">
+                  <p>15&euro;</p>
+                </div>
+                <div class="add-to-cart">
+                    <button>add to cart</button>
+                </div>
+             </div>
+             <div class="face">
+               <a href="blush_3.html"><img src="bronzen-blush-highlighter/blush_3.jpg" alt=""></a>
+                <div class="title">
+                     <h2>blush stick</h2>
+                </div>
+                <div class="price">
+                  <p>17&euro;</p>
+                </div>
+                <div class="add-to-cart">
+                    <button>add to cart</button>
+                </div>
+             </div>
+             <div class="face">
+              <a href="highlighter_2.html"> <img src="bronzen-blush-highlighter/highlighter_2.jpg" alt=""></a>
+               <div class="title">
+                  <h2>gold highlighter</h2>
+               </div>
+               <div class="price">
+                  <p>19&euro;</p>
+               </div>
+               <div class="add-to-cart">
+                 <button>add to cart</button>
+               </div>
+             </div>
+             <div class="face">
+               <a href="foudiosion_4.html"> <img src="fudiosion/foundation_4.jpg" alt=""></a>
+                <div class="title">
+                  <h2>dark foundation shade</h2>
+                </div>
+                <div class="pride"> 
+                   <p>20&euro;</p>
+                </div>
+                <div class="add-to-cart">
+                    <button>add to cart</button>
+                </div>
+             </div>
+        </div>
+        <header>
+            <!-- Content -->
+          </header>
+          
+          <main>
+            <!-- Content -->
+          </main>
+          
+          <footer class="footer">
+            <div class="footer__addr">
+              <h1 class="footer__logo">Something</h1>
+                  
+              <a href="aboutus.html">click to learn more about us!</a>
+              
+              <address>
+                5534 Somewhere In. The World 22193-10212<br>
+                    
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Print</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+                
+                <ul class="nav__ul nav__ul--extra">
+                  <li>
+                    <a href="#">Hardware Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Software Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Digital Signage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Automation</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Artificial Intelligence</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">IoT</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="contact">
+                <a href="contact.html">if there is any problem contact us!!</a>
+            </div>
+           
+            <div class="legal">
+              <p>&copy; 2019 Something. All rights reserved.</p>
+            </div>
+  
+            <div class="social">
+                
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </footer>
+</body>
+</html>
